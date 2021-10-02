@@ -27,6 +27,30 @@ public class Users {
         UserPassword = userPassword;
     }
 
+    public void setProfilePicture(String profilePicture) {
+        this.profilePicture = profilePicture;
+    }
+
+    public void setUserName(String userName) {
+        UserName = userName;
+    }
+
+    public void setUserEmailAddress(String userEmailAddress) {
+        UserEmailAddress = userEmailAddress;
+    }
+
+    public void setUserPassword(String userPassword) {
+        UserPassword = userPassword;
+    }
+
+    public void setUserId(String userId) {
+        UserId = userId;
+    }
+
+    public void setLastMsgId(String lastMsgId) {
+        this.lastMsgId = lastMsgId;
+    }
+
     public String getProfilePicture() {
         return profilePicture;
     }
@@ -49,5 +73,8 @@ public class Users {
 
     public String getLastMsgId() {
         return lastMsgId;
+    }
+
+    public void getUserId(String key) {
     }
 }

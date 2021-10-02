@@ -6,6 +6,11 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.4036458333333333" />
         <entry key="app/src/main/res/layout/activity_sign_in.xml" value="0.4036458333333333" />
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_calls.xml" value="0.4036458333333333" />
+        <entry key="app/src/main/res/layout/fragment_chats.xml" value="0.3020833333333333" />
+        <entry key="app/src/main/res/layout/fragment_chats_fragments.xml" value="0.21240942028985507" />
+        <entry key="app/src/main/res/layout/fragment_status.xml" value="0.38958333333333334" />
+        <entry key="app/src/main/res/layout/sample_show_user.xml" value="0.2203125" />
         <entry key="app/src/main/res/menu/menu.xml" value="0.4036458333333333" />
       </map>
     </option>

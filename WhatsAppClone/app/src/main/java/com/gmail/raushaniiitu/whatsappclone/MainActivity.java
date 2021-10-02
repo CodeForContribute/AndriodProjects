@@ -10,6 +10,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.gmail.raushaniiitu.whatsappclone.Adapter.FragmentAdapter;
 import com.gmail.raushaniiitu.whatsappclone.databinding.ActivityMainBinding;
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -21,19 +22,28 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        // below line of code is to attaching the java class to Layout.xml file to get the
+        // resources later without calling findViewById(R.id.view_id)
+        // Also help in adding setOnClickListener Even for desired views
         activityMainBinding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(activityMainBinding.getRoot());
+        // get the firebase Authentication Instance
         firebaseAuth = FirebaseAuth.getInstance();
+        // first create ViewPager for Recycler View(where Recycler view will be a Fragment)
+        activityMainBinding.viewPagerId.setAdapter(new FragmentAdapter(getSupportFragmentManager()));
+        // second add the ViewPager to respecting tabLayout positions
+        activityMainBinding.tabLayoutId.setupWithViewPager(activityMainBinding.viewPagerId);
     }
 
     @Override
+    // for creating menu such as Settings,Logout on right Top Corner (...)
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater menuInflater = getMenuInflater();
         menuInflater.inflate(R.menu.menu, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
+    // Actions based on the selected MenuOptions in the Top-right Corner
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
