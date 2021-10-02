@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "374023990416",
+    "project_id": "skilled-chalice-136123",
+    "storage_bucket": "skilled-chalice-136123.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:374023990416:android:03d65b5fa932677344fc15",
+        "android_client_info": {
+          "package_name": "com.gmail.raushaniiitu.localrestaurantfinderapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "374023990416-cfpiivech5b8rhhg4v5ev8vkg06m9kgq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPIw_UCzCwH3WXkxy_S-QYcPiL3qQGxXo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "374023990416-cfpiivech5b8rhhg4v5ev8vkg06m9kgq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

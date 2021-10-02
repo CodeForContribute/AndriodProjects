@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/birthday_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/androidparty" />
+
+    <TextView
+        android:id="@+id/birthday_text_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Happy BirthDay, Amit!"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/white"
+        android:padding="15dp"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/sender_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From, Raushan !"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:fontFamily="sans-serif-light"
+        android:padding="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+
+
+</RelativeLayout>

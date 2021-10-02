@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gmail.raushaniiitu.phonepayintegration">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PhonePayIntegration">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Keep it false in production environment-->
+        <meta-data
+            android:name="com.phonepe.android.sdk.Debuggable"
+            android:value="true"/>
+
+        <!-- Keep it false in production environment-->
+        <meta-data
+            android:name="com.phonepe.android.sdk.isUAT"
+            android:value="true"/>
+
+        <!-- Get the App Id from PhonePe-->
+        <meta-data
+            android:name="com.phonepe.android.sdk.AppId"
+            android:value="<your app id given by PhonePe>"/>
+
+    </application>
+
+</manifest>

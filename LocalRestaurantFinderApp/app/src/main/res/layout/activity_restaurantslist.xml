@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+    tools:context=".RestaurantsList">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="?actionBarSize">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:padding="15dp"-->
+<!--                android:src="@drawable/back_icon" />-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:padding="15dp"-->
+<!--                android:src="@drawable/search_icon" />-->
+<!--        </RelativeLayout>-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:padding="10dp"
+            android:text="Restaurants"
+            android:textAllCaps="true"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/round_bk2"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/categories_restaurant_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="30dp"
+                android:fontFamily="sans-serif"
+                android:text="Krishna Sweets"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:background="#00000000"
+                android:text="Expand All"
+                android:textColor="@android:color/black"
+                android:onClick="OpenKrishnaSweetsHomePage"
+                android:textSize="8sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/restaurant_background"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/categories_restaurant_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="30dp"
+                android:fontFamily="sans-serif"
+                android:text="Paneer House"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:background="#00000000"
+                android:text="Expand All"
+                android:textColor="@android:color/white"
+                android:onClick="OpenPaneerHouseHomePage"
+                android:textSize="8sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/round_bk2"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/categories_restaurant_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="30dp"
+                android:fontFamily="sans-serif"
+                android:text="Jammie Pizza"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:background="#00000000"
+                android:text="Expand All"
+                android:textColor="@android:color/black"
+                android:onClick="OpenJammiePizzaHomePage"
+                android:textSize="8sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/restaurant_background"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/categories_restaurant_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="30dp"
+                android:fontFamily="sans-serif"
+                android:text="Biryani House"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:background="#00000000"
+                android:text="Expand All"
+                android:textColor="@android:color/white"
+                android:onClick="OpenBiryaniHouseHomePage"
+                android:textSize="8sp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>

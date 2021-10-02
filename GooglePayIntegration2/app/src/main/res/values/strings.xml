@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Google Pay Integration</string>
+    <string name="transaction_note">Transaction Note</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="user_name">User Name</string>
+    <string name="upi_id">UPI ID</string>
+</resources>

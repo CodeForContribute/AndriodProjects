@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:background="#FFFFFF">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_id"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:id="@+id/image_view_id"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/avi" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/user1name_text_view_id"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/card_view_id"
+            android:text="Raushan"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/user1_time_view_id"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/user1name_text_view_id"
+            android:text="09:06AM"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/user1_msg_view_id"
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/user1name_text_view_id"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@+id/card_view_id"
+            android:text="How are you ?"
+            android:textColor="#000000"
+            android:textSize="10sp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignInPage">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/restaurant_background" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:padding="20dp">
+
+<!--        <EditText-->
+<!--            android:id="@+id/user_mobile_number_id"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:background="@android:color/white"-->
+<!--            android:hint="Enter your mobile number"-->
+<!--            android:textSize="15sp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:inputType="text"-->
+<!--            android:padding="15dp"/>-->
+
+<!--        <Button-->
+<!--            android:id="@+id/user_sign_in_id"-->
+<!--            android:layout_below="@+id/user_mobile_number_id"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:text="Sign In"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="@android:color/black"-->
+<!--            android:padding="16dp" />-->
+        <!--Edittext for getting users phone number-->
+        <EditText
+            android:id="@+id/idEdtPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:textColor="@android:color/white"
+            android:background="@android:color/white"
+            android:hint="Enter your phone"
+            android:backgroundTint="@color/cardview_light_background"
+            android:importantForAutofill="no"
+            android:inputType="phone" />
+
+        <!--Button for getting OTP-->
+        <Button
+            android:id="@+id/idBtnGetOtp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idEdtPhoneNumber"
+            android:layout_margin="10dp"
+            android:text="Get OTP"
+            android:background="@drawable/rounded_corners"
+            android:textAllCaps="false" />
+
+        <!--Edittext for getting otp from user-->
+        <EditText
+            android:id="@+id/idEdtOtp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idBtnGetOtp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Enter OTP"
+            android:textColor="@android:color/white"
+            android:background="@android:color/white"
+            android:importantForAutofill="no"
+            android:inputType="phone" />
+
+        <!--button for verifying user OTP-->
+        <Button
+            android:id="@+id/idBtnVerify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idEdtOtp"
+            android:layout_margin="10dp"
+            android:text="Verify OTP"
+            android:background="@drawable/rounded_corners"
+            android:textAllCaps="false" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
