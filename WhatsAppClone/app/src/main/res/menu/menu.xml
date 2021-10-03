@@ -7,4 +7,17 @@
     <item
         android:id="@+id/logout"
         android:title="Logout"/>
+    <item
+        android:id="@+id/new_group"
+        android:title="New Group"/>
+    <item
+        android:id="@+id/linked_devices"
+        android:title="Linked Devices"/>
+    <item
+        android:id="@+id/payments"
+        android:title="Payments"/>
+    <item
+        android:id="@+id/new_broadcast"
+        android:title="New Broadcast"/>
+
 </menu>

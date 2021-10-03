@@ -14,6 +14,8 @@ import com.gmail.raushaniiitu.whatsappclone.Adapter.FragmentAdapter;
 import com.gmail.raushaniiitu.whatsappclone.databinding.ActivityMainBinding;
 import com.google.firebase.auth.FirebaseAuth;
 
+import java.util.Objects;
+
 public class MainActivity extends AppCompatActivity {
 
     ActivityMainBinding activityMainBinding;
@@ -27,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         // Also help in adding setOnClickListener Even for desired views
         activityMainBinding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(activityMainBinding.getRoot());
+        //Objects.requireNonNull(getSupportActionBar()).hide();
         // get the firebase Authentication Instance
         firebaseAuth = FirebaseAuth.getInstance();
         // first create ViewPager for Recycler View(where Recycler view will be a Fragment)
@@ -55,6 +58,16 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, SignInActivity.class);
                 startActivity(intent);
                 break;
+            case R.id.payments:
+                Toast.makeText(getApplicationContext(), "payments clicked", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.new_broadcast:
+                Toast.makeText(getApplicationContext(), "new_broadcast clicked", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.new_group:
+                Toast.makeText(getApplicationContext(), "new_group clicked", Toast.LENGTH_SHORT).show();
+                break;
+
         }
         return true;
     }
