@@ -15,14 +15,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GoogleMaps">
         <activity
-            android:name=".MainActivity"
+            android:name=".SearchAddressOnMapActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"></activity>
 
         <meta-data
             android:name="com.google.android.gms.version"
@@ -35,7 +37,6 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCTar-d9yNeLsN3T7br2_Zv_wyHX3ToKdA" />
-
     </application>
 
 </manifest>
